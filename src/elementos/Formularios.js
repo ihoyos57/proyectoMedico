@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components';
+import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const colores = {
@@ -11,7 +11,7 @@ const Formulario = styled.form`
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
-
+	font-family: 'Montserrat
 	@media (max-width: 800px){
 		grid-template-columns: 1fr;
 	}
@@ -23,6 +23,7 @@ const Label = styled.label`
 	padding: 10px;
 	min-height: 40px;
 	cursor: pointer;
+	font-family: 'Montserrat
 
 	${props => props.valido === 'false' && css`
 		color: ${colores.error};
@@ -110,6 +111,10 @@ const ContenedorBotonCentrado = styled.div`
 	flex-direction: column;
 	align-items: center;
 	grid-column: span 2;
+	margin-top: 100px;
+    margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
 
 	@media (max-width: 800px){
 		grid-column: span 1;
@@ -127,6 +132,7 @@ const Boton = styled.button`
 	border-radius: 3px;
 	cursor: pointer;
 	transition: .1s ease all;
+	
 
 	&:hover {
 		box-shadow: 3px 0px 30px rgba(163,163,163, 1);
